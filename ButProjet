@@ -1,4 +1,3 @@
-{/*
 
 /src
 │
@@ -24,5 +23,3 @@
 │   └── /Footer         # Pied de page (si nécessaire)
 │
 └── index.jsx            # Point d'entrée principal de l'application
-
-*/}
