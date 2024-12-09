@@ -1,0 +1,1 @@
+//Barre latérale pour des options ou des filtres

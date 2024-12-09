@@ -1,0 +1,1 @@
+//Composant pour afficher les détails d'une chaussure

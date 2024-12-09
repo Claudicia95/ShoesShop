@@ -1,0 +1,28 @@
+{/*
+
+/src
+│
+├── /assets
+│   ├── /images         # Toutes les images (chaussures, logos, etc.)
+│   └── /styles         # Fichiers CSS ou SCSS pour les styles globaux
+│
+├── /components
+│   ├── /Card           # Composant pour afficher les chaussures
+│   ├── /DetailsModal   # Composant pour afficher les détails d'une chaussure
+│   ├── /Button         # Boutons réutilisables (Ajouter, Modifier, Supprimer)
+│   └── ...             # Autres composants réutilisables
+│
+├── /data
+│   ├── shoesData.js    # Données des chaussures (prix, taille, couleur, etc.)
+│   └── ...             # D'autres fichiers de données si nécessaires
+│
+├── /pages
+│   ├── /Home           # Page principale avec les chaussures affichées
+│   ├── /Header         # En-tête contenant le logo, le titre, etc.
+│   ├── /Navbar         # Barre de navigation (liens vers d'autres pages)
+│   ├── /Sidebar        # Barre latérale pour des options ou des filtres
+│   └── /Footer         # Pied de page (si nécessaire)
+│
+└── index.jsx            # Point d'entrée principal de l'application
+
+*/}
