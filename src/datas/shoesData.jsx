@@ -10,6 +10,9 @@ import Jordan7 from '../assets/Jordan7.jpg';
 import Jordan9 from '../assets/Jordan9.jpg';
 import Jordan10 from '../assets/Jordan10.jpg';
 import Jordan11 from '../assets/Jordan11.jpg';
+import Jordan14 from '../assets/Jordan14.jpg';
+import Jordan15 from '../assets/Jordan15.jpg';
+import Jordan16 from '../assets/jordan16.jpg'
 
 export const ShoesData = [
     {
@@ -31,7 +34,7 @@ export const ShoesData = [
     {
         name: 'Air Jordan 3',
         size: '40',
-        model: 'Slip',
+        model: 'Slim',
         color: 'white',
         namePicture: Jordan3,
         price: '300'
@@ -47,7 +50,7 @@ export const ShoesData = [
     {
         name: 'Air Jordan 5',
         size: '39',
-        model: 'Montante',
+        model: 'slim',
         color: 'beige',
         namePicture: Jordan5,
         price: '290'
@@ -71,7 +74,7 @@ export const ShoesData = [
     {
         name: 'Air Jordan 8',
         size: 42,
-        model: 'Montante',
+        model: 'slim',
         color: 'white',
         namePicture: Jordan9,
         price: '350'
@@ -91,5 +94,29 @@ export const ShoesData = [
         color: 'gris',
         namePicture: Jordan11,
         price: '370'
+    },
+    {
+        name: 'Air Jordan 14',
+        size: '37',
+        model: 'slim',
+        color: 'gris',
+        namePicture: Jordan14,
+        price: '364'
+    },
+    {
+        name: 'Air Jordan 15',
+        size: '38',
+        model: 'Montante',
+        color: 'gris',
+        namePicture: Jordan15,
+        price: '225'
+    },
+    {
+        name: 'Air Jordan 16',
+        size: '37',
+        model: 'slim',
+        color: 'gris',
+        namePicture: Jordan16,
+        price: '585'
     }
 ];
