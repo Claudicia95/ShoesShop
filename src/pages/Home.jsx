@@ -1,6 +1,6 @@
 // Page principale avec les chaussures affichées
 
-import React, { useState } from "react";
+import React from "react";
 import Card from "../components/Card";
 import { ShoesData } from "../datas/shoesData";
 
@@ -14,17 +14,9 @@ const styles = {
 };
 
 function Home() {
-  // Définir l'état pour les chaussures
-  const [shoes, setShoes] = useState(ShoesData);
-
-  // Fonction pour supprimer une chaussure
-  const deleteShoe = (name) => {
-    setShoes(shoes.filter((shoe) => shoe.name !== name)); // Filtrer la chaussure par son nom
-  };
-
   return (
     <div className="HomeContainer" style={styles.HomeContainer}>
-      {shoes.map((shoe, index) => (
+      {ShoesData.map((shoe, index) => (
         <Card
           key={index} // Clé unique pour chaque élément
           name={shoe.name}
@@ -33,7 +25,6 @@ function Home() {
           size={shoe.size}
           price={shoe.price}
           color={shoe.color}
-          onDelete={() => deleteShoe(shoe.name)} // Passage de la fonction de suppression
         />
       ))}
     </div>

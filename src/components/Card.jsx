@@ -1,7 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import DetailsModal from "./DetailsModal";
-import Button from "../components/Button";
+
 
 function Card({ name, size, model, color, price, picture, onDelete }) { // Assurer que 'onDelete' est une prop ici
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -14,6 +14,7 @@ function Card({ name, size, model, color, price, picture, onDelete }) { // Assur
             textAlign: 'center',
             width: '200px',
             margin: '10px',
+            
         },
         imgCard: {
             width: '100%',
@@ -43,20 +44,14 @@ function Card({ name, size, model, color, price, picture, onDelete }) { // Assur
             >
                 Afficher
             </button>
-            {/* Bouton "Supprimer" qui appelle la fonction onDelete */}
-            <Button
-                label="Supprimer"         // Texte du bouton
-                color="red"               // Couleur rouge pour signaler une action de suppression
-                icon="trash"              // Icône de poubelle pour supprimer
-                size="medium"             // Taille du bouton
-                onClick={onDelete}        // Action à exécuter quand on clique sur le bouton
-            />
+            
             <DetailsModal
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
                 shoe={{ name, size, model, color, price, picture }} />
         </div>
     );
+
 }
 
 export default Card;

@@ -8,7 +8,7 @@
 ├── /components
 │   ├── /Card           # Composant pour afficher les chaussures
 │   ├── /DetailsModal   # Composant pour afficher les détails d'une chaussure
-│   ├── /Button         # Boutons réutilisables (Ajouter, Modifier, Supprimer)
+│   ├── /Button         # Boutons réutilisables (trier les chaussure par Couleur,  size)
 │   └── ...             # Autres composants réutilisables
 │
 ├── /data
@@ -23,3 +23,6 @@
 │   └── /Footer         # Pied de page (si nécessaire)
 │
 └── index.jsx            # Point d'entrée principal de l'application
+
+
+
