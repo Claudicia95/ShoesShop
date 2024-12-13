@@ -81,7 +81,7 @@ export const ShoesData = [
     },
     {
         name: 'Air Jordan 10',
-        size: 42,
+        size: '42',
         model: 'Montante',
         color: 'white and blue',
         namePicture: Jordan10,

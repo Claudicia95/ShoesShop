@@ -1,3 +1,5 @@
+Le but de l'exercice est de créer une gris d'image sur 3pages et de filtrer les éléments,Zoomer.
+
 
 /src
 │
@@ -8,7 +10,6 @@
 ├── /components
 │   ├── /Card           # Composant pour afficher les chaussures
 │   ├── /DetailsModal   # Composant pour afficher les détails d'une chaussure
-│   ├── /Button         # Boutons réutilisables (trier les chaussure par Couleur,  size)
 │   └── ...             # Autres composants réutilisables
 │
 ├── /data
@@ -26,3 +27,30 @@
 
 
 
+Ce que j'ai pu retenir:
+
+Card est un composant qui consiste à afficher les chaussures.
+DetailsModal est un composant qui afficher les détailles de chaque élément d'une chaussure.
+Home est la page principale qui permet de mettre en lumière le composant Card.
+
+
+la notion de useState,
+
+le filtre:
+
+  {/* Menu déroulant pour choisir le critère de filtre */}
+
+    * <select onChange={(e) => setFilterBy(e.target.value)}
+        <option value="size">Taille</option>
+                    ||
+                    ||
+      </select>
+
+
+    {/* Champ de saisie pour entrer la valeur du filtre */}
+            <input <option value="name">Nom</option>
+            <option value="model">Modèle</option>
+      onChange={(e) => setSearchValue(e.target.value)} />
+
+
+      LE PROJET N'EST PAS TERMINE. JE DOIS GERER LE SIDEBAR, FOOTER

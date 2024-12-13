@@ -3,7 +3,7 @@ import React from "react";
 import DetailsModal from "./DetailsModal";
 
 
-function Card({ name, size, model, color, price, picture, onDelete }) { // Assurer que 'onDelete' est une prop ici
+function Card({ name, size, model, color, price, picture,}) { 
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const styles = {
@@ -15,6 +15,9 @@ function Card({ name, size, model, color, price, picture, onDelete }) { // Assur
             width: '200px',
             margin: '10px',
             
+        },
+        cardContainerHover :{
+boxShadow :'3px 3px 3px solid orange'
         },
         imgCard: {
             width: '100%',
@@ -32,7 +35,7 @@ function Card({ name, size, model, color, price, picture, onDelete }) { // Assur
 
     return (
         <div style={styles.cardContainer}>
-            <img src={picture} alt={name} style={styles.imgCard} />
+            <img src={picture} alt={name} style={styles.imgCard } />
             <h3>{name}</h3>
             <p>Size: {size}</p>
             <p>Model: {model}</p>
@@ -50,6 +53,7 @@ function Card({ name, size, model, color, price, picture, onDelete }) { // Assur
                 onClose={() => setIsModalOpen(false)}
                 shoe={{ name, size, model, color, price, picture }} />
         </div>
+        
     );
 
 }
