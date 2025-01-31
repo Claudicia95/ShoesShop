@@ -1,21 +1,17 @@
-//Point d'entrée principal de l'application
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Utilise directement BrowserRouter
 import Home from './pages/Home';
 import Navbar from './pages/Navbar';
-
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
-      <Navbar/>    
+    <BrowserRouter>  {/* Remplace Router par BrowserRouter */}
+      <Navbar />    
       <Routes>
-        < Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Home />} />
       </Routes>      
-    </Router>
+    </BrowserRouter>
   </React.StrictMode>
-)
+);

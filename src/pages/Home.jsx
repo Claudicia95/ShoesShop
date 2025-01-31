@@ -46,7 +46,7 @@ function Home() {
 const [filterBy, setFilterBy] = useState("");
 const [searchValue, setSearchValue] = useState("");
 
-const filteredShoes = ShoesData.filter((shoe)=>{
+const filteredShoes = ShoesData?.filter((shoe)=>{
   if (!filterBy || !searchValue ) return true;
   return shoe[filterBy]?.toLowerCase().includes(searchValue.toLowerCase());
 });
@@ -73,8 +73,7 @@ const handlefilterBy = (e) =>{
       style={styles.input}
       value={searchValue}
       onChange={(e)=> setSearchValue(e.target.value)}
-      />
-      
+      />     
     <div className="HomeContainer" style={styles.HomeContainer}>
       {filteredShoes.map((shoe, index) => (
         <Card
@@ -89,8 +88,6 @@ const handlefilterBy = (e) =>{
       ))}
     </div>
     </div>
-
   );
 }
-
 export default Home;

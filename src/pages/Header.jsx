@@ -22,9 +22,6 @@ const styles = {
     },
 };
 
-
-
-
 function Header(){
     return(
         <div style={styles.logoContainer}>
